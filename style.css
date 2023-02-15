@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+.wrap {
+    display: flex;
+}
+
+#myVideo {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: -1;
+}
+
+.wrap .container1,
+.wrap .container2 {
+    width: 49%;
+    height: 100vh;
+    display: flex;
+    margin: 0px 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* ------------------------------------------------------------ */
+/*                          FIRST CONTAINER                      */
+/* ------------------------------------------------------------ */
+.wrap .container1 {
+    position: fixed;
+}
+
+.wrap .container1 .cafe {
+    background-color: rgba(245, 245, 245, 0.736);
+    width: 600px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    position: relative;
+    top: 60px;
+}
+
+.wrap .container1 .cafe p {
+    font-size: 3rem;
+}
+
+/* ------------------------------------------------------ */
+.wrap .container1 .drink {
+    left: 43px;
+    top: 208px;
+}
+
+.box:hover {
+    background-color: rgba(0, 0, 0, 0.693);
+    color: white;
+}
+
+/* --------------------------------------------------- */
+.wrap .container1 .about {
+    left: 364px;
+    top: 208px;
+}
+
+/* ----------------------------------------------------- */
+.wrap .container1 .special {
+    top: 356px;
+    left: 43px;
+}
+
+/* ----------------------------------------------------- */
+.wrap .container1 .contact {
+    top: 356px;
+    left: 364px;
+}
+
+/* ------------------------------------------------------------ */
+/*--------------------- SECOND CONTAINER----------------------- */
+/* ------------------------------------------------------------ */
+.container2 {
+    position: relative;
+    /* visibility: hidden; */
+    left: 690px;
+}
+
+.container2 .menubar {
+    background-color: rgba(0, 0, 0, 0.482);
+    margin: 60px 20px;
+    width: 100%;
+    /* border: 1px solid red; */
+    height: 100px;
+    position: relative;
+    right: 0px;
+    border-radius: 12px;
+}
+
+.container2 .menubar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.container2 .menubar ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 .menubar ul a {
+    text-decoration: none;
+    padding: 35px;
+    margin: 5px;
+    font-size: 1.3rem;
+    text-align: center;
+    color: white;
+}
+
+.container2 .menubar ul li .active,
+.container2 .menubar ul a:hover {
+    background-color: rgba(188, 78, 78, 0.537);
+    border-radius: 21px;
+}
+
+/* -------------------ITEM BOX POSITION------------------------ */
+.coffee1 {
+    position: absolute;
+    top: 120px;
+    right: 0px;
+}
+
+.coffee2 {
+    position: absolute;
+    top: 305px;
+    right: 0px;
+}
+
+.coffee2 .title .primaryhead {
+    margin-right: 200px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.coffee3 {
+    position: absolute;
+    top: 485px;
+    right: 0px;
+}
+
+.coffee4 {
+    position: absolute;
+    top: 660px;
+    right: 0px;
+    margin-bottom: 30px;
+}
+
+/* -------------------------------------------------------- */
+
+.menubar ul li .iced-coffee {
+    display: block;
+}
+
+/* ------------------ */
+.menubar ul li .hot-coffee {
+    display: none;
+}
+
+.menubar ul li:hover .hot-coffee {
+    display: block;
+}
+
+.menubar ul li .hot-coffee:hover .iced-coffee  {
+    display: none;
+}
+
+/* ---------------------------------- */
+.menubar ul li .juice {
+    display: none;
+}
+
+.menubar ul li:hover .juice {
+    display: block;
+}
+
+.juice .title .primaryhead {
+    margin-right: 170px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+/* ------------------------------------------------------------ */
+/* UTILITY CLASSES */
+/* ------------------------------------------------------------ */
+
+.faicon {
+    font-size: 2rem;
+    color: rgb(28, 100, 100);
+    margin-right: 20px;
+}
+
+.phead {
+    font-size: 1.7rem;
+    color: rgb(74, 136, 129);
+}
+
+.box {
+    background-color: rgba(245, 245, 245, 0.736);
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 12px;
+    height: 130px;
+}
+
+.flexbox {
+    display: flex;
+    box-sizing: border-box;
+    width: 630px;
+    /* border: 1px solid red; */
+}
+
+.radius {
+    border-radius: 12px;
+}
+
+.title {
+    display: flex;
+    align-content: space-between;
+    margin-bottom: 20px;
+}
+
+.title .primaryhead {
+    margin-right: 220px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.title .price {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.coffee-content {
+    background-color: rgb(71 50 73);
+    color: white;
+    width: 100%;
+    padding: 20px;
+    height: 160px;
+    margin-left: 10px;
+}
+
+.para {
+    font-size: 1.1rem;
+    opacity: 0.6;
+}
